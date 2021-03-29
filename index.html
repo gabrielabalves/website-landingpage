@@ -8,14 +8,71 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<!--MENU-->
     <nav class="navbar">
         <div class="brand">Code<span class="sensei">Sensei</span></div>
-        <ul class="topnav">
+        <ul class="topnav" id="navbar-toggle">
             <li><a class="nav-link" href="#">Home</a></li>
             <li><a class="nav-link" href="#">Products</a></li>
             <li><a class="nav-link" href="#">About us</a></li>
             <li><a class="nav-link" href="#">Contact</a></li>
+            <li class="dropdownLink"><a onclick="toggleDropdown()" href="javascript:void(0)">&#9776;</a></li>
         </ul>
     </nav>
+
+<!--HEADER-->
+    <header>
+        <div class="headshot-wrapper">
+            <img class="headshot" src="assets/eu.jpg" alt="profile image">
+            <h1>Gabriela Alves</h1>
+        </div>
+    </header>
+
+<!--SEÇÃO-->
+    <section class="services">
+        <div class="container">
+            <div class="media-object">
+                <div class="icon-left">
+                    <img class="icon" src="assets/graph_lines.svg" alt="graph chart">
+                </div>
+                <div class="blurb-wrapper-right">
+                    <h3 class="blurb-header">Scalable Code</h3>
+                    <div class="blurb-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit perferendis odio, ea debitis voluptate autem quos quibusdam accusantium praesentium libero nam pariatur cum iste architecto laborum reprehenderit aspernatur excepturi in.
+                    </div>
+                </div>
+            </div>
+            <div class="media-object">
+                <div class="icon-right">
+                    <img class="icon" src="assets/pie_chart.svg" alt="graph chart">
+                </div>
+                <div class="blurb-wrapper-left">
+                    <h3 class="blurb-header">Scalable Code</h3>
+                    <div class="blurb-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit perferendis odio, ea debitis voluptate autem quos quibusdam accusantium praesentium libero nam pariatur cum iste architecto laborum reprehenderit aspernatur excepturi in.
+                    </div>
+                </div>
+            </div>
+            <div class="media-object">
+                <div class="icon-left">
+                    <img class="icon" src="assets/assistant_icon.svg" alt="graph chart">
+                </div>
+                <div class="blurb-wrapper-right">
+                    <h3 class="blurb-header">Scalable Code</h3>
+                    <div class="blurb-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit perferendis odio, ea debitis voluptate autem quos quibusdam accusantium praesentium libero nam pariatur cum iste architecto laborum reprehenderit aspernatur excepturi in.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+
 </body>
 </html>
