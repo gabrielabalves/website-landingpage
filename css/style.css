@@ -6,7 +6,7 @@ html, body {
     line-height: 20px;
     font-size: 1rem;
     color: #303137;
-    margin: 0;
+    margin: 0;  
 }
 
 .navbar, .container {
@@ -18,7 +18,7 @@ html, body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 .brand, .nav-link, a {
@@ -55,6 +55,7 @@ html, body {
 header {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .headshot-wrapper {
@@ -68,12 +69,13 @@ header {
     border-radius: 50%;
     max-width: 200px;
     height: 200px;
-    width: 100%;
 }
 
-.services {
+.services,
+.contact-container {
     background-color: #F3F1Fa;
     padding: 4rem 1rem;
+    width: 100%;
 }
 
 .media-object {
@@ -122,6 +124,75 @@ header {
     font-size: 18px;
 }
 
+.quote-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.quote-btn {
+    color: #FFFFFF;
+    background-color: #66B6D3;
+    font-size: 18px;
+    border: none;
+    padding: .8rem 4rem;
+    border-radius: 3px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+}
+
+.section-header {
+    text-align: center;
+    padding: 6rem 0 4rem;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-object{
+    max-width: 250px;
+    margin: 1rem 0;
+}
+
+.portfolio-box {
+    width: 250px;
+    height: 250px;
+    background-color: #F1F3Fa;
+    transition: .2s ease-in-out;
+}
+
+.portfolio-box:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+form label {
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: .75rem;
+}
+
+.form-control {
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #292b2c;
+    border-radius: 2px;
+    border: 1px solid #ced4da;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+    display: block;
+}
+
+.submit-btn-wrapper {
+    margin-top: 4rem;
+}
 
 
 
@@ -133,6 +204,11 @@ header {
 
 /*#####################MOBILE#####################*/
 @media (max-width: 768px) {
+    html, body {
+        position:relative;
+        overflow-x:hidden;
+    }
+
     ul.topnav li a.nav-link {
         display: none;
     }
@@ -164,8 +240,31 @@ header {
     ul.topnav.responsive li a.nav-link {
         display: block;
         line-height: 2;
+    }   
+
+    .media-object {
+        flex-direction: column;
+        text-align: center;
     }
 
+    .icon-right, 
+    .icon-left {
+        order: 1;
+    }
 
-    
+    .blurb-wrapper-left, 
+    .blurb-wrapper-right {
+        order: 2;
+        padding-top: 2rem;
+    }
+
+    .form-group {
+        display: flex;
+    }
+
+    .submit-btn-wrapper {
+        text-align: center;
+    }
+
 }
+
